@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Hero from './components/hero';
+import About from './components/about';
 
 const App = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div className="bg-white">
       <Hero />
+      <About />
     </div>
   );
 };
