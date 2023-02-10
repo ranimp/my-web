@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Hero from './components/hero';
 import About from './components/about';
+import Projects from './components/projects';
 
 const App = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const App = () => {
     <div className="bg-white">
       <Hero />
       <About />
+      <Projects />
     </div>
   );
 };
