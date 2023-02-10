@@ -1,7 +1,19 @@
-export default function App() {
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Hero from './components/hero';
+
+const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div className="bg-white">
+      <Hero />
+    </div>
+  );
+};
+
+export default App;
