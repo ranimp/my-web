@@ -5,6 +5,7 @@ import Hero from './components/hero';
 import About from './components/about';
 import Projects from './components/projects';
 import Competencies from './components/competencies';
+import Contact from './components/contact';
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
       <About />
       <Projects />
       <Competencies />
+      <Contact />
     </div>
   );
 };
